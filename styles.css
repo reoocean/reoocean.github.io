@@ -138,7 +138,7 @@ nav {
 .navbar {
     display: flex;
     justify-content: center;
-    background-color: #1f1d22;
+    background-color: #1f1d22; /* لون شريط الأزرار */
     padding: 10px 0;
 }
 
