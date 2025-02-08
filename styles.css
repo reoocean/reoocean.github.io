@@ -32,8 +32,8 @@ nav {
 }
 
 .nav-list li a img {
-    width: 40px; /* تصغير حجم الأزرار في الكمبيوتر */
-    height: 40px;
+    width: 51px; /* تصغير حجم الأزرار في الكمبيوتر */
+    height: 80px;
     transition: transform 0.3s ease;
 }
 
@@ -89,8 +89,8 @@ nav {
     }
 
     .home-icon img {
-        width: 90px; /* تكبير حجم زر الرئيسية في الجوال */
-        height: 90px;
+        width: 100px; /* تكبير حجم زر الرئيسية في الجوال */
+        height: 100px;
     }
 
     .nav-list.active {
@@ -100,12 +100,6 @@ nav {
     .center-image img {
         max-width: 80%; /* تكبير الصورة في الجوال */
     }
-}
-/* تغيير صورة الأزرار عند التمرير عليها */
-.nav-list li a img {
-    width: 40px; /* حجم الأزرار في الكمبيوتر */
-    height: 40px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .nav-list li a:hover img {
