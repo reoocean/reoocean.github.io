@@ -1,38 +1,31 @@
-<!-- index.html (الصفحة الرئيسية) -->
 <!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الرئيسية</title>
+    <title>موقعي الشخصي</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">الصفحة الرئيسية</header>
-    
-    <nav class="navbar">
-        <a href="index.html"><img src="images/home.png" class="default" alt="الرئيسية"><img src="images/home-hover.png" class="hover"></a>
-        <a href="tools.html"><img src="images/tools.png" class="default" alt="أدوات"><img src="images/tools-hover.png" class="hover"></a>
-        <a href="experience.html"><img src="images/experience.png" class="default" alt="خبرات"><img src="images/experience-hover.png" class="hover"></a>
-        <a href="works.html"><img src="images/works.png" class="default" alt="أعمال"><img src="images/works-hover.png" class="hover"></a>
-        <a href="habits.html"><img src="images/habits.png" class="default" alt="عادات"><img src="images/habits-hover.png" class="hover"></a>
-        <a href="projects.html"><img src="images/projects.png" class="default" alt="مشاريع"><img src="images/projects-hover.png" class="hover"></a>
-    </nav>
-    
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <div class="menu" id="menu">
-        <a href="index.html">الرئيسية</a>
-        <a href="tools.html">أدوات</a>
-        <a href="experience.html">خبرات</a>
-        <a href="works.html">أعمال</a>
-        <a href="habits.html">عادات</a>
-        <a href="projects.html">مشاريع</a>
-    </div>
-
-    <section class="content">مرحبا بك في الصفحة الرئيسية!</section>
-    
-    <script src="./script.js"></script>
+    <header>
+        <nav>
+            <div class="menu-icon" id="menuIcon">&#9776;</div>
+            <ul class="nav-list" id="navList">
+                <li><a href="#"><img src="home-icon.png" alt="رئيسية"></a></li>
+                <li><a href="#"><img src="tools-icon.png" alt="أدوات"></a></li>
+                <li><a href="#"><img src="experience-icon.png" alt="خبرات"></a></li>
+                <li><a href="#"><img src="habits-icon.png" alt="عادات"></a></li>
+                <li><a href="#"><img src="projects-icon.png" alt="مشاريع"></a></li>
+                <li><a href="#"><img src="works-icon.png" alt="اعمال"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="center-image">
+            <img src="center-image.png" alt="صورة مركزية">
+        </div>
+        <p>مرحبًا أيها المفارسًا لقد دخلت إلى مملكتي الرقمية، هنا أشارك أعمالي، تحجيابي، وأفكاري المجنونة، وربما تجد شبيًّا بإيمانًا.</p>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
-
-<!-- باقي الصفحات بنفس البنية مع تغيير عنوان الصفحة والمحتوى -->
