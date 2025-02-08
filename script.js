@@ -1,8 +1,8 @@
-function toggleMenu() {
-    var menu = document.getElementById("menu");
-    if (menu.style.display === "flex") {
-        menu.style.display = "none";
-    } else {
-        menu.style.display = "flex";
-    }
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menuIcon');
+    const navList = document.getElementById('navList');
+
+    menuIcon.addEventListener('click', function() {
+        navList.classList.toggle('active');
+    });
+});
