@@ -9,7 +9,6 @@ body {
 /* تحديد ألوان خاصة لكل قسم */
 .header {
     background-color: #1f1d22; /* لون القسم الرئيسي */
-    color: white;
     padding: 20px;
     text-align: center;
 }
