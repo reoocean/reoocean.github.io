@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1f1d22; /* الخلفية باللون المطلوب */
+    background-color: #1f1d22; /* الخلفية الأساسية */
     color: #ffffff;
     text-align: center;
     margin: 0;
@@ -8,8 +8,9 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #1f1d22; /* نفس لون الخلفية */
     padding: 10px 0;
+    position: relative;
 }
 
 nav {
@@ -27,12 +28,12 @@ nav {
 }
 
 .nav-list li {
-    margin: 0 10px;
+    margin: 0 15px; /* زيادة المسافة بين الأزرار */
 }
 
 .nav-list li a img {
-    width: 40px;
-    height: 40px;
+    width: 50px; /* تكبير حجم الأزرار */
+    height: 50px;
     transition: transform 0.3s ease;
 }
 
@@ -44,6 +45,11 @@ nav {
     display: none;
     font-size: 24px;
     cursor: pointer;
+    color: #ffffff;
+}
+
+.home-icon {
+    display: none; /* إخفاء زر الرئيسية في الشاشات الكبيرة */
 }
 
 .center-image img {
@@ -56,19 +62,38 @@ nav {
     .nav-list {
         display: none;
         flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 50px;
+        background-color: #1f1d22; /* نفس لون الخلفية */
+        position: fixed;
+        top: 0;
         right: 0;
         width: 100%;
+        height: 100vh; /* القائمة بحجم الصفحة كاملة */
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
     }
 
     .nav-list li {
-        margin: 10px 0;
+        margin: 20px 0; /* زيادة المسافة بين الأزرار في القائمة */
     }
 
     .menu-icon {
         display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .home-icon {
+        display: block; /* إظهار زر الرئيسية في الجوال */
+        position: absolute;
+        right: 60px; /* إبعاده عن أيقونة القائمة */
+        top: 10px;
+    }
+
+    .home-icon img {
+        width: 40px; /* حجم زر الرئيسية */
+        height: 40px;
     }
 
     .nav-list.active {
