@@ -34,13 +34,11 @@ body {
 }
 
 .hero-image img {
-    max-height: 400px; /* لن تزيد عن 400 بكسل */
     object-fit: cover; /* يجعل الصورة تتناسب مع الشاشة دون تشويه */
 }
 
 @media (max-width: 768px) {
     .hero-image {
-        height: 40vh; /* تصغير الارتفاع على الجوال */
         object-fit: cover; /* يجعل الصورة تتناسب مع الشاشة دون تشويه */
     }
 }
