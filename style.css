@@ -58,14 +58,31 @@ body {
     transition: 0.3s;
 }
 
-.navbar img:hover {
-    content: url('hover-image.png'); /* استبدال الصورة عند المرور عليها */
+.navbar a img.default {
+    display: block;
+}
+
+.navbar a img.hover {
+    display: none;
+}
+
+.navbar a:hover img.default {
+    display: none;
+}
+
+.navbar a:hover img.hover {
+    display: block;
 }
 
 /* قائمة الجوال */
 .menu-icon {
     display: none;
     cursor: pointer;
+    font-size: 30px;
+    color: white;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .menu {
@@ -91,7 +108,6 @@ body {
     .navbar a:not(:first-child) {
         display: none;
     }
-
     .menu-icon {
         display: block;
     }
