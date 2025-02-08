@@ -1,1 +1,38 @@
+<!-- index.html (الصفحة الرئيسية) -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">الصفحة الرئيسية</header>
+    
+    <nav class="navbar">
+        <a href="index.html"><img src="images/home.png" class="default" alt="الرئيسية"><img src="images/home-hover.png" class="hover"></a>
+        <a href="tools.html"><img src="images/tools.png" class="default" alt="أدوات"><img src="images/tools-hover.png" class="hover"></a>
+        <a href="experience.html"><img src="images/experience.png" class="default" alt="خبرات"><img src="images/experience-hover.png" class="hover"></a>
+        <a href="works.html"><img src="images/works.png" class="default" alt="أعمال"><img src="images/works-hover.png" class="hover"></a>
+        <a href="habits.html"><img src="images/habits.png" class="default" alt="عادات"><img src="images/habits-hover.png" class="hover"></a>
+        <a href="projects.html"><img src="images/projects.png" class="default" alt="مشاريع"><img src="images/projects-hover.png" class="hover"></a>
+    </nav>
+    
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+        <a href="index.html">الرئيسية</a>
+        <a href="tools.html">أدوات</a>
+        <a href="experience.html">خبرات</a>
+        <a href="works.html">أعمال</a>
+        <a href="habits.html">عادات</a>
+        <a href="projects.html">مشاريع</a>
+    </div>
 
+    <section class="content">مرحبا بك في الصفحة الرئيسية!</section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- باقي الصفحات بنفس البنية مع تغيير عنوان الصفحة والمحتوى -->
