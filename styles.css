@@ -48,12 +48,8 @@ nav {
     color: #ffffff;
 }
 
-.home-icon {
-    display: none; /* إخفاء زر الرئيسية في الشاشات الكبيرة */
-}
-
 .center-image img {
-    max-width: 60%; /* تعديل حجم الصورة */
+    max-width: 40%; /* تعديل حجم الصورة */
     height: auto;
     margin-top: 20px; /* إضافة مسافة من الأعلى */
     transition: transform 0.3s ease;
@@ -93,8 +89,8 @@ nav {
     }
 
     .home-icon img {
-        width: 50px; /* تكبير حجم زر الرئيسية في الجوال */
-        height: 50px;
+        width: 90px; /* تكبير حجم زر الرئيسية في الجوال */
+        height: 90px;
     }
 
     .nav-list.active {
