@@ -145,7 +145,7 @@ nav {
 }
 
 .nav-list li:nth-child(2) a::after {
-    background-image: url('tools-icon-hover.png'); /* صورة بديلة لزر الأدوات */
+    background-image: url('images/tools-hover.png'); /* صورة بديلة لزر الأدوات */
 }
 
 .nav-list li:nth-child(3) a::after {
