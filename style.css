@@ -1,3 +1,26 @@
+/* استيراد خط عربي (إذا لزم الأمر) */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+/* تعميم تنسيق الصفحة */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+    background: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* خلفية الصفحة مع الصورة */
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('images/background.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .sections {
     position: absolute;
     top: 10%; /* رفع الأزرار للأعلى */
