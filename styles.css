@@ -176,11 +176,6 @@ nav {
         display: block;
     }
 
-    /* حجم زر "الرئيسية" في الجوال */
-    .home-icon img {
-        width: 50px; /* حجم زر الرئيسية في الجوال */
-        height: 50px;
-    }
 }
 /* تنسيق الأزرار في الكمبيوتر */
 .nav-list {
@@ -197,20 +192,14 @@ nav {
     margin: 0 10px; /* تقليل المسافة بين الأزرار في الكمبيوتر */
 }
 
-.nav-list li a img {
-    width: 40px; /* حجم الأزرار في الكمبيوتر */
-    height: 40px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
 .home-icon {
     margin-left: auto; /* نقل زر الرئيسية إلى اليمين */
     margin-right: 20px; /* إضافة مسافة بين زر الرئيسية والأزرار الأخرى */
 }
 
 .home-icon img {
-    width: 40px; /* حجم زر الرئيسية في الكمبيوتر */
-    height: 40px;
+    width: 60px; /* حجم زر الرئيسية في الكمبيوتر */
+    height: 60px;
 }
 
 @media (max-width: 768px) {
