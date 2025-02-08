@@ -3,67 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reoocean</title>
-    <link rel="stylesheet" href="style.css">
+    <title>الصفحة الرئيسية</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .menu {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .menu img {
+            width: 50px;
+            height: 50px;
+            transition: opacity 0.3s;
+        }
+        .menu img:hover {
+            opacity: 0.5;
+        }
+        .banner {
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+        }
+        .mobile-menu {
+            display: none;
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        @media (max-width: 600px) {
+            .menu {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+                font-size: 30px;
+            }
+            .mobile-menu {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .mobile-menu.active {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body>
-<!-- خلفية -->
-<div class="background-container">
-     <div class="overlay"></div>
- </div>
-    
-<!-- زر القائمة (للجوال) -->
-<header>
-    <nav>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <ul class="nav-links">
-            <li><a href="#">الأدوات</a></li>
-            <li><a href="#">الخبرات</a></li>
-            <li><a href="#">الأعمال</a></li>
-            <li><a href="#">العادات</a></li>
-            <li><a href="#">المشاريع</a></li>
-        </ul>
-        <a href="#" class="home-btn">الرئيسية</a>
-    </nav>
-</header>
-
-    <section class="sections">
-        <div class="section" id="main">
-            <img src="images/main.png" class="default" alt="رئيسية">
-            <img src="images/main-hover.png" class="hover" alt="رئيسية">
-        </div>
-        <div class="section" id="tools">
-            <img src="images/tools.png" class="default" alt="أدوات">
-            <img src="images/tools-hover.png" class="hover" alt="أدوات">
-        </div>
-        <div class="section" id="experiences">
-            <img src="images/experiences.png" class="default" alt="خبرات">
-            <img src="images/experiences-hover.png" class="hover" alt="خبرات">
-        </div>
-        <div class="section" id="works">
-            <img src="images/works.png" class="default" alt="أعمال">
-            <img src="images/works-hover.png" class="hover" alt="أعمال">
-        </div>
-        <div class="section" id="habits">
-            <img src="images/habits.png" class="default" alt="عادات">
-            <img src="images/habits-hover.png" class="hover" alt="عادات">
-        </div>
-        <div class="section" id="projects">
-            <img src="images/projects.png" class="default" alt="مشاريع">
-            <img src="images/projects-hover.png" class="hover" alt="مشاريع">
-        </div>
-    </section>
-    
-    <!-- صورة بانر رئيسي -->
-<div class="hero-image">
-    <img src="images/banner.jpg" alt="صورة رئيسية">
-</div>
-    
-<script>
-function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("show");
-}
-</script>
-    
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="menu">
+        <img src="button1.png" alt="زر 1" onmouseover="this.src='button1-hover.png'" onmouseout="this.src='button1.png'">
+        <img src="button2.png" alt="زر 2" onmouseover="this.src='button2-hover.png'" onmouseout="this.src='button2.png'">
+        <img src="button3.png" alt="زر 3" onmouseover="this.src='button3-hover.png'" onmouseout="this.src='button3.png'">
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <img src="button1.png" alt="زر 1" onmouseover="this.src='button1-hover.png'" onmouseout="this.src='button1.png'">
+        <img src="button2.png" alt="زر 2" onmouseover="this.src='button2-hover.png'" onmouseout="this.src='button2.png'">
+        <img src="button3.png" alt="زر 3" onmouseover="this.src='button3-hover.png'" onmouseout="this.src='button3.png'">
+    </div>
+    <img src="banner.png" alt="بنر" class="banner">
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
