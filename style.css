@@ -22,6 +22,29 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* صورة الصفحة الرئيسية */
+.hero-image {
+    width: 100%; /* جعل الصورة تأخذ العرض بالكامل */
+    height: 60vh; /* جعل الارتفاع 60% من الشاشة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يجعل الصورة تتناسب مع الشاشة دون تشويه */
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        height: 40vh; /* تصغير الارتفاع على الجوال */
+    }
+}
+
 .sections {
     position: absolute;
     top: 10%; /* رفع الأزرار للأعلى */
