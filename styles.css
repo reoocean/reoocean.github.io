@@ -32,8 +32,8 @@ nav {
 }
 
 .nav-list li a img {
-    width: 51px; /* تصغير حجم الأزرار في الكمبيوتر */
-    height: 80px;
+    width: 100px; /* تصغير حجم الأزرار في الكمبيوتر */
+    height: 71px;
     transition: transform 0.3s ease;
 }
 
