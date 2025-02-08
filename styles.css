@@ -145,26 +145,31 @@ nav {
 .navbar a {
     display: inline-block;
     margin: 0 10px;
+    position: relative; /* لإضافة تأثير Hover */
 }
 
 .navbar img {
     width: 50px;
     height: 50px;
-    transition: 0.3s;
+    transition: opacity 0.3s ease; /* تأثير انتقال سلس */
 }
 
 .navbar a img.default {
-    display: block;
+    display: block; /* الصورة الافتراضية تظهر */
 }
 
 .navbar a img.hover {
-    display: none;
+    display: none; /* الصورة البديلة مخفية */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .navbar a:hover img.default {
-    display: none;
+    opacity: 0; /* إخفاء الصورة الافتراضية عند التمرير */
 }
 
 .navbar a:hover img.hover {
-    display: block;
+    display: block; /* إظهار الصورة البديلة عند التمرير */
+    opacity: 1;
 }
