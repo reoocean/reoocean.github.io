@@ -24,15 +24,6 @@ body {
 }
 
 /* صورة الصفحة الرئيسية */
-.hero-image {
-    width: 100%; /* جعل الصورة تأخذ العرض بالكامل */
-    height: 60vh; /* جعل الارتفاع 60% من الشاشة */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
 .hero-image img {
     object-fit: cover; /* يجعل الصورة تتناسب مع الشاشة دون تشويه */
 }
