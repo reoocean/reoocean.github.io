@@ -89,8 +89,8 @@ nav {
     }
 
     .home-icon img {
-        width: 90px; /* تكبير حجم زر الرئيسية في الجوال */
-        height: 90px;
+        width: 20px; /* تكبير حجم زر الرئيسية في الجوال */
+        height: 20px;
     }
 
     .nav-list.active {
