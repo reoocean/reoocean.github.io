@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الصفحة الرئيسية</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-align: center;
-        }
         body {
             background-color: #1a1a1a;
             color: white;
@@ -38,6 +32,7 @@
             width: 80%;
             max-width: 800px;
             height: auto;
+            object-fit: cover; /* يجعل الصورة تتناسب مع الشاشة دون تشويه */
         }
         .mobile-menu {
             display: none;
@@ -78,6 +73,7 @@
         <img src="button2.png" alt="زر 2" onmouseover="this.src='button2-hover.png'" onmouseout="this.src='button2.png'">
         <img src="button3.png" alt="زر 3" onmouseover="this.src='button3-hover.png'" onmouseout="this.src='button3.png'">
     </div>
+    <img src="images/banner.png" alt="بنر" class="banner">
     <script>
         function toggleMenu() {
             document.getElementById('mobileMenu').classList.toggle('active');
