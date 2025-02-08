@@ -13,17 +13,19 @@
  </div>
     
 <!-- زر القائمة (للجوال) -->
-<div class="menu-icon" onclick="toggleMenu()">☰</div>
-
-<!-- قائمة الجوال -->
-<div class="mobile-menu" id="mobileMenu">
-    <div class="close-btn" onclick="toggleMenu()">×</div>
-    <a href="#tools">أدوات</a>
-    <a href="#experiences">خبرات</a>
-    <a href="#works">أعمال</a>
-    <a href="#habits">عادات</a>
-    <a href="#projects">مشاريع</a>
-</div>
+<header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#">الأدوات</a></li>
+            <li><a href="#">الخبرات</a></li>
+            <li><a href="#">الأعمال</a></li>
+            <li><a href="#">العادات</a></li>
+            <li><a href="#">المشاريع</a></li>
+        </ul>
+        <a href="#" class="home-btn">الرئيسية</a>
+    </nav>
+</header>
 
     <section class="sections">
         <div class="section" id="main">
@@ -57,15 +59,11 @@
     <img src="images/banner.jpg" alt="صورة رئيسية">
 </div>
     
-    <script>
-    function toggleMenu() {
-        var menu = document.getElementById("mobileMenu");
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "block";
-        }
-    }
+<script>
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("show");
+}
 </script>
+    
 </body>
 </html>
