@@ -4,68 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الصفحة الرئيسية</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-align: center;
-        }
-        body {
-            background-color: #1a1a1a;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        .menu {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-        .menu img {
-            width: 50px;
-            height: 50px;
-            transition: opacity 0.3s;
-        }
-        .menu img:hover {
-            opacity: 0.5;
-        }
-        .banner {
-            width: 80%;
-            max-width: 800px;
-            height: auto;
-        }
-        .mobile-menu {
-            display: none;
-        }
-        .hamburger {
-            display: none;
-            cursor: pointer;
-        }
-        @media (max-width: 600px) {
-            .menu {
-                display: none;
-            }
-            .hamburger {
-                display: block;
-                font-size: 30px;
-            }
-            .mobile-menu {
-                display: none;
-                flex-direction: column;
-                gap: 10px;
-            }
-            .mobile-menu.active {
-                display: flex;
-            }
-        }
-    </style>
 </head>
 <body>
+    <img src="home.png" alt="الرئيسية" class="home-button" onmouseover="this.src='home-hover.png'" onmouseout="this.src='home.png'">
     <div class="hamburger" onclick="toggleMenu()">☰</div>
     <div class="menu">
         <img src="button1.png" alt="زر 1" onmouseover="this.src='button1-hover.png'" onmouseout="this.src='button1.png'">
