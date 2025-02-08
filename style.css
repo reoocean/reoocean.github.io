@@ -38,3 +38,61 @@ body {
     background-color: #9b59b6; /* لون القسم الخامس */
     padding: 20px;
 }
+
+/* تنسيق شريط الأزرار */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+
+.navbar img:hover {
+    content: url('hover-image.png'); /* استبدال الصورة عند المرور عليها */
+}
+
+/* قائمة الجوال */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    color: white;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
