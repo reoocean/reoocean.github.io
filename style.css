@@ -1,75 +1,41 @@
-/* إعدادات الخطوط والاتجاه */
-body {
-    font-family: "Tajawal", sans-serif;
-    text-align: center;
-    direction: rtl;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-/* رأس الصفحة */
-header {
-    background: #333;
-    color: white;
-    padding: 15px;
-}
-
-header h1 {
-    margin: 0;
-}
-
-/* قائمة التنقل */
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* قسم الترحيب */
-.welcome {
-    margin: 50px 0;
-}
-
-.welcome h2 {
-    font-size: 2.5rem;
-}
-
-.welcome p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.cta {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.cta:hover {
-    background: #0056b3;
-}
-
-/* تذييل الصفحة */
-footer {
-    margin-top: 50px;
-    background: #333;
-    color: white;
-    padding: 10px;
-}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reoocean</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>مرحبًا أيها المغامر!</h1>
+            <p>لقد دخلت إلى مملكتي الرقمية، هنا أشارك أعمالي، تحدياتي، وأفكاري المجنونة، وربما تجد شيئًا يهمك!</p>
+        </div>
+    </div>
+    
+    <section class="sections">
+        <div class="section" id="tools">
+            <img src="tools.png" class="default" alt="أدوات">
+            <img src="tools-hover.png" class="hover" alt="أدوات">
+        </div>
+        <div class="section" id="experiences">
+            <img src="experiences.png" class="default" alt="خبرات">
+            <img src="experiences-hover.png" class="hover" alt="خبرات">
+        </div>
+        <div class="section" id="works">
+            <img src="works.png" class="default" alt="أعمال">
+            <img src="works-hover.png" class="hover" alt="أعمال">
+        </div>
+        <div class="section" id="habits">
+            <img src="habits.png" class="default" alt="عادات">
+            <img src="habits-hover.png" class="hover" alt="عادات">
+        </div>
+        <div class="section" id="projects">
+            <img src="projects.png" class="default" alt="مشاريع">
+            <img src="projects-hover.png" class="hover" alt="مشاريع">
+        </div>
+    </section>
+</body>
+</html>
