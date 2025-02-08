@@ -70,7 +70,7 @@ nav {
 
 @media (max-width: 768px) {
     .nav-list {
-        display: none;
+        display: none; /* إخفاء القائمة بشكل افتراضي في الجوال */
         flex-direction: column;
         background-color: #1f1d22; /* نفس لون الخلفية */
         position: fixed;
@@ -81,6 +81,10 @@ nav {
         justify-content: center;
         align-items: center;
         z-index: 1000;
+    }
+
+    .nav-list.active {
+        display: flex; /* إظهار القائمة عند النقر على أيقونة القائمة */
     }
 
     .nav-list li {
@@ -104,10 +108,6 @@ nav {
     .home-icon img {
         width: 100px; /* تكبير حجم زر الرئيسية في الجوال */
         height: 100px;
-    }
-
-    .nav-list.active {
-        display: flex;
     }
 
     .center-image img {
