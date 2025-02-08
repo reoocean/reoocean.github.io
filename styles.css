@@ -45,13 +45,13 @@ nav {
 }
 
 .home-icon {
-    margin-left: auto; /* نقل زر الرئيسية إلى اليمين */
-    margin-right: 20px; /* إضافة مسافة بين زر الرئيسية والأزرار الأخرى */
+    margin-right: auto; /* نقل زر الرئيسية إلى اليمين */
+    margin-right: 0px; /* إضافة مسافة بين زر الرئيسية والأزرار الأخرى */
 }
 
 .home-icon img {
-    width: 60px; /* حجم زر الرئيسية في الكمبيوتر */
-    height: 60px;
+    width: 100px; /* حجم زر الرئيسية في الكمبيوتر */
+    height: 100px;
 }
 
 .menu-icon {
