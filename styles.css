@@ -151,3 +151,34 @@ nav {
 .nav-list li a:hover::after {
     opacity: 1; /* إظهار الصورة البديلة عند التمرير */
 }
+
+/* حجم زر "الرئيسية" في الكمبيوتر */
+.home-icon img {
+    width: 40px; /* حجم زر الرئيسية في الكمبيوتر */
+    height: 40px;
+}
+
+/* حجم زر "إكس" في قائمة الجوال */
+.close-icon {
+    display: none; /* إخفاء زر الإكس افتراضيًا */
+    font-size: 30px; /* حجم زر الإكس */
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
+
+@media (max-width: 768px) {
+    /* إظهار زر الإكس عند فتح القائمة */
+    .nav-list.active + .close-icon {
+        display: block;
+    }
+
+    /* حجم زر "الرئيسية" في الجوال */
+    .home-icon img {
+        width: 50px; /* حجم زر الرئيسية في الجوال */
+        height: 50px;
+    }
+}
