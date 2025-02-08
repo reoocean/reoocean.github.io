@@ -92,10 +92,13 @@ nav {
     }
 
     .menu-icon {
-        display: block;
-        position: absolute;
-        left: 20px; /* نقل أيقونة القائمة إلى اليسار */
-        top: 10px;
+       display: none;
+       font-size: 32px; /* تكبير حجم الأيقونة */
+       cursor: pointer;
+       color: #ffffff;
+       position: absolute;
+       left: 20px; /* نقل أيقونة القائمة إلى اليسار */
+       top: 10px;
     }
 
     .home-icon {
