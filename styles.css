@@ -15,7 +15,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* الأزرار تبدأ من اليسار */
     align-items: center;
     padding: 0 20px;
 }
@@ -25,54 +25,48 @@ nav {
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: center; /* توسيط الأزرار */
     align-items: center;
-    flex-grow: 1; /* لجعل الأزرار تأخذ المساحة المتاحة */
 }
 
 .nav-list li {
     margin: 0 10px; /* تقليل المسافة بين الأزرار في الكمبيوتر */
 }
 
-.nav-list li a {
+.nav-list li a,
+.home-icon {
     position: relative;
     display: inline-block;
 }
 
-.nav-list li a img {
+.nav-list li a img,
+.home-icon img {
     width: 100px; /* حجم الأزرار في الكمبيوتر */
     height: 71px;
     transition: opacity 0.3s ease; /* تأثير انتقال سلس */
 }
 
-.nav-list li a img.default {
+.nav-list li a img.default,
+.home-icon img.default {
     display: block; /* الصورة الافتراضية تظهر */
 }
 
-.nav-list li a img.hover {
+.nav-list li a img.hover,
+.home-icon img.hover {
     display: none; /* الصورة البديلة مخفية */
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.nav-list li a:hover img.default {
+.nav-list li a:hover img.default,
+.home-icon:hover img.default {
     opacity: 0; /* إخفاء الصورة الافتراضية عند التمرير */
 }
 
-.nav-list li a:hover img.hover {
+.nav-list li a:hover img.hover,
+.home-icon:hover img.hover {
     display: block; /* إظهار الصورة البديلة عند التمرير */
     opacity: 1;
-}
-
-.home-icon {
-    margin-left: auto; /* نقل زر الرئيسية إلى اليمين */
-    margin-right: 20px; /* إضافة مسافة بين زر الرئيسية والأزرار الأخرى */
-}
-
-.home-icon img {
-    width: 100px; /* حجم زر الرئيسية في الكمبيوتر */
-    height: 100px;
 }
 
 .menu-icon {
