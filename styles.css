@@ -16,6 +16,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    margin-left: auto; /* نقل زر الرئيسية إلى اليمين */
     /*align-items: center;*/
     padding: 0 20px;
 }
@@ -25,6 +26,7 @@ nav {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-left: auto; /* نقل زر الرئيسية إلى اليمين */
     /*justify-content: center; /* توسيط الأزرار */
     /*align-items: center;*/
     flex-grow: 1; /* لجعل الأزرار تأخذ المساحة المتاحة */
