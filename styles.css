@@ -45,8 +45,7 @@ nav {
 }
 
 .home-icon {
-    margin-left: auto; /* نقل زر الرئيسية إلى اليمين */
-    margin-right: 20px; /* إضافة مسافة بين زر الرئيسية والأزرار الأخرى */
+    justify-content: center; /* توسيط الأزرار */
 }
 
 .home-icon img {
