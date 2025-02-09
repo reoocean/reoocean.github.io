@@ -147,6 +147,7 @@ nav {
         display: block;
     }
 }
+
 /* تنسيق الفوتر */
 footer {
     background-color: #1f1d22; /* لون الخلفية */
@@ -154,11 +155,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    margin-top: auto; /* لجعل الفوتر يلتصق بالأسفل */
 }
 
 /* تنسيق نص حقوق النشر */
