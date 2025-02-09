@@ -29,7 +29,7 @@ nav {
 }
 
 .nav-list li {
-    margin: 0 10px; /* تقليل المسافة بين الأزرار في الكمبيوتر */
+    /*margin: 0 0px; /* تقليل المسافة بين الأزرار في الكمبيوتر */
 }
 
 .nav-list li a,
@@ -120,8 +120,8 @@ nav {
     }
 
     .home-icon img {
-        width: 70px; /* تكبير حجم زر الرئيسية في الجوال */
-        height: 70px;
+        width: 80px; /* تكبير حجم زر الرئيسية في الجوال */
+        height: 80px;
     }
 
     .center-image img {
