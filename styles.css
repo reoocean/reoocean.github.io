@@ -40,8 +40,8 @@ nav {
 
 .nav-list li a img,
 .home-icon img {
-    width: 60px; /* حجم الأزرار في الكمبيوتر */
-    height: 60px;
+    width: 100px; /* حجم الأزرار في الكمبيوتر */
+    height: 100px;
 }
 
 .nav-list li a img.default,
@@ -70,7 +70,7 @@ nav {
 
 .menu-icon {
     display: none; /* إخفاء أيقونة القائمة بشكل افتراضي */
-    font-size: 32px; /* تكبير حجم الأيقونة */
+    font-size: 42px; /* تكبير حجم الأيقونة */
     cursor: pointer;
     color: #ffffff;
     position: absolute;
@@ -81,7 +81,7 @@ nav {
 .center-image img {
     max-width: 40%; /* تعديل حجم الصورة */
     height: auto;
-    margin-top: 100px; /* إضافة مسافة من الأعلى */
+    margin-top: 20px; /* إضافة مسافة من الأعلى */
     transition: transform 0.3s ease;
 }
 
