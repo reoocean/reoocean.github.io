@@ -42,7 +42,6 @@ nav {
 .home-icon img {
     width: 60px; /* حجم الأزرار في الكمبيوتر */
     height: 60px;
-    transition: opacity 0.3s ease; /* تأثير انتقال سلس */
 }
 
 .nav-list li a img.default,
@@ -82,7 +81,7 @@ nav {
 .center-image img {
     max-width: 40%; /* تعديل حجم الصورة */
     height: auto;
-    margin-top: 50px; /* إضافة مسافة من الأعلى */
+    margin-top: 100px; /* إضافة مسافة من الأعلى */
     transition: transform 0.3s ease;
 }
 
@@ -106,7 +105,7 @@ nav {
     }
 
     .nav-list li {
-        margin: 20px 0; /* زيادة المسافة بين الأزرار في القائمة */
+        margin: 10px 0; /* زيادة المسافة بين الأزرار في القائمة */
     }
 
     .menu-icon {
