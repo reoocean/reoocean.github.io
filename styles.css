@@ -67,7 +67,7 @@ nav {
 .center-image img {
     max-width: 40%; /* تعديل حجم الصورة */
     height: auto;
-    margin-top: 20px; /* إضافة مسافة من الأعلى */
+    margin-top: 50px; /* إضافة مسافة من الأعلى */
     transition: transform 0.3s ease;
 }
 
