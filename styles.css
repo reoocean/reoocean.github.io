@@ -5,9 +5,6 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* لجعل الصفحة تأخذ على الأقل ارتفاع الشاشة */
 }
 
 header {
@@ -18,7 +15,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: center; /* الأزرار تبدأ من الوسط */
+    justify-content: center; /*الأزرار تبدأ */
     align-items: center;
     padding: 0 20px;
 }
@@ -32,7 +29,7 @@ nav {
 }
 
 .nav-list li {
-    margin: 0 0; /* تقليل المسافة بين الأزرار في الكمبيوتر */
+    /*margin: 0 0px; /* تقليل المسافة بين الأزرار في الكمبيوتر */
 }
 
 .nav-list li a,
@@ -45,7 +42,6 @@ nav {
 .home-icon img {
     width: 100px; /* حجم الأزرار في الكمبيوتر */
     height: 100px;
-    transition: opacity 0.3s ease; /* تأثير انتقال سلس */
 }
 
 .nav-list li a img.default,
@@ -93,58 +89,27 @@ nav {
     .nav-list {
         display: none; /* إخفاء القائمة بشكل افتراضي في الجوال */
         flex-direction: column;
-        background-color: rgba(31, 29, 34, 0.95); /* خلفية شبه شفافة */
+        background-color: #1f1d22; /* نفس لون الخلفية */
         position: fixed;
         top: 0;
-        right: -100%; /* إخفاء القائمة خارج الشاشة */
-        width: 80%; /* عرض القائمة */
+        right: 0;
+        width: 100%;
         height: 100vh; /* القائمة بحجم الصفحة كاملة */
         justify-content: center;
         align-items: center;
         z-index: 1000;
-        transition: right 0.3s ease; /* تأثير سلس */
-        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); /* ظل على الجانب */
     }
 
     .nav-list.active {
-        right: 0; /* إظهار القائمة */
+        display: flex; /* إظهار القائمة عند النقر على أيقونة القائمة */
     }
 
     .nav-list li {
-        margin: 20px 0; /* زيادة المسافة بين الأزرار في القائمة */
-        opacity: 0; /* إخفاء العناصر بشكل افتراضي */
-        transform: translateX(20px); /* تحريك العناصر قليلاً */
-        transition: opacity 0.3s ease, transform 0.3s ease; /* تأثير سلس */
-    }
-
-    .nav-list.active li {
-        opacity: 1; /* إظهار العناصر */
-        transform: translateX(0); /* إعادة العناصر إلى مكانها */
-    }
-
-    .nav-list li:nth-child(1) {
-        transition-delay: 0.1s; /* تأخير ظهور العنصر الأول */
-    }
-
-    .nav-list li:nth-child(2) {
-        transition-delay: 0.2s; /* تأخير ظهور العنصر الثاني */
-    }
-
-    .nav-list li:nth-child(3) {
-        transition-delay: 0.3s; /* تأخير ظهور العنصر الثالث */
-    }
-
-    .nav-list li:nth-child(4) {
-        transition-delay: 0.4s; /* تأخير ظهور العنصر الرابع */
-    }
-
-    .nav-list li:nth-child(5) {
-        transition-delay: 0.5s; /* تأخير ظهور العنصر الخامس */
+        margin: 2px 0; /* زيادة المسافة بين الأزرار في القائمة */
     }
 
     .menu-icon {
         display: block; /* إظهار أيقونة القائمة في الجوال */
-        z-index: 1001; /* التأكد من ظهورها فوق القائمة */
     }
 
     .home-icon {
@@ -162,22 +127,24 @@ nav {
     .center-image img {
         max-width: 85%; /* تكبير الصورة في الجوال */
     }
+}
 
-    .close-icon {
-        display: none; /* إخفاء زر الإكس افتراضيًا */
-        font-size: 30px;
-        color: #ffffff;
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 1001;
-        transition: opacity 0.3s ease; /* تأثير سلس */
-    }
+/* حجم زر "إكس" في قائمة الجوال */
+.close-icon {
+    display: none; /* إخفاء زر الإكس افتراضيًا */
+    font-size: 30px; /* حجم زر الإكس */
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+}
 
+@media (max-width: 768px) {
+    /* إظهار زر الإكس عند فتح القائمة */
     .nav-list.active + .close-icon {
-        display: block; /* إظهار زر الإكس عند فتح القائمة */
-        opacity: 1;
+        display: block;
     }
 }
 
