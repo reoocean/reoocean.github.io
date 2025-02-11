@@ -112,7 +112,7 @@ nav {
         display: block; /* إظهار زر الرئيسية في الجوال */
         position: absolute;
         right: 20px; /* إبعاده عن أيقونة القائمة */
-        top: 10px;
+        top: 5px;
     }
 
     .home-icon img {
@@ -121,7 +121,7 @@ nav {
     }
 
     .center-image img {
-        max-width: 85%; /* تكبير الصورة في الجوال */
+        max-width: 100%; /* تكبير الصورة في الجوال */
     }
 }
 
