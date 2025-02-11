@@ -171,7 +171,7 @@ footer p {
 /* تنسيق صورة حقوق النشر */
 footer .copyright {
     display: flex;
-    justify-content: flex-end; /* دفع المحتوى إلى اليمين */
+    justify-content: center; /* دفع المحتوى إلى اليمين */
     width: 100%;
 }
 
