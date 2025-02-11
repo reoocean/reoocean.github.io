@@ -1,13 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuIcon = document.getElementById('menuIcon');
-    const navList = document.getElementById('navList');
-    const closeIcon = document.getElementById('closeIcon');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const closeIcon = document.querySelector(".close-icon");
+    const navList = document.querySelector(".nav-list");
 
-    menuIcon.addEventListener('click', function() {
-        navList.classList.add('active');
+    // عند النقر على ☰ افتح القائمة
+    menuIcon.addEventListener("click", function () {
+        navList.classList.add("active");
     });
 
-    closeIcon.addEventListener('click', function() {
-        navList.classList.remove('active');
+    // عند النقر على ❌ أغلق القائمة
+    closeIcon.addEventListener("click", function () {
+        navList.classList.remove("active");
+    });
+
+    // إغلاق القائمة عند النقر خارجها
+    document.addEventListener("click", function (event) {
+        if (!navList.contains(event.target) && !menuIcon.contains(event.target)) {
+            navList.classList.remove("active");
+        }
     });
 });
