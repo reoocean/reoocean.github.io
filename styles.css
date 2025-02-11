@@ -155,35 +155,8 @@ footer {
 }
 
 /* تنسيق نص حقوق النشر */
-footer .copyright {
-    font-size: 14px;
-    color: #ffffff;
-}
 footer .copyright img {
     max-width: 150px; /* الحد الأقصى لعرض الصورة */
     height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
     display: block; /* لجعل الصورة تظهر بشكل صحيح */
-}
-
-/* تنسيق روابط مواقع التواصل الاجتماعي */
-footer .social-links {
-    display: flex;
-    gap: 10px; /* المسافة بين الأيقونات */
-}
-
-footer .social-links a {
-    display: inline-block;
-    width: 348px;
-    height: 22px;
-    transition: transform 0.3s ease;
-}
-
-footer .social-links a:hover {
-    transform: scale(1.2); /* تكبير الأيقونة عند التمرير */
-}
-
-/* أيقونات مواقع التواصل الاجتماعي */
-footer .social-links img {
-    width: 100%;
-    height: 100%;
 }
