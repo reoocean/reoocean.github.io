@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1f1d22; /* الخلفية الأساسية */
+    background-color: #1f1d22;
     color: #ffffff;
     text-align: center;
     margin: 0;
@@ -8,14 +8,14 @@ body {
 }
 
 header {
-    background-color: #1f1d22; /* نفس لون الخلفية */
+    background-color: #1f1d22;
     padding: 10px 0;
     position: relative;
 }
 
 nav {
     display: flex;
-    justify-content: center; /*الأزرار تبدأ */
+    justify-content: center;
     align-items: center;
     padding: 0 20px;
 }
@@ -26,28 +26,35 @@ nav {
     margin: 0;
     padding: 0;
     align-items: center;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .nav-list li a,
 .home-icon {
     position: relative;
     display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 .nav-list li a img,
 .home-icon img {
-    width: 100px; /* حجم الأزرار في الكمبيوتر */
+    width: 100px;
     height: 100px;
+}
+
+.nav-list li a:hover,
+.home-icon:hover {
+    transform: scale(1.1);
 }
 
 .nav-list li a img.default,
 .home-icon img.default {
-    display: block; /* الصورة الافتراضية تظهر */
+    display: block;
 }
 
 .nav-list li a img.hover,
 .home-icon img.hover {
-    display: none; /* الصورة البديلة مخفية */
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -55,80 +62,81 @@ nav {
 
 .nav-list li a:hover img.default,
 .home-icon:hover img.default {
-    opacity: 0; /* إخفاء الصورة الافتراضية عند التمرير */
+    opacity: 0;
 }
 
 .nav-list li a:hover img.hover,
 .home-icon:hover img.hover {
-    display: block; /* إظهار الصورة البديلة عند التمرير */
+    display: block;
     opacity: 1;
 }
 
 .menu-icon {
-    display: none; /* إخفاء أيقونة القائمة بشكل افتراضي */
-    font-size: 42px; /* تكبير حجم الأيقونة */
+    display: none;
+    font-size: 42px;
     cursor: pointer;
     color: #ffffff;
     position: absolute;
-    left: 20px; /* نقل أيقونة القائمة إلى اليسار */
+    left: 20px;
     top: 10px;
 }
 
 .center-image img {
-    max-width: 40%; /* تعديل حجم الصورة */
+    max-width: 40%;
     height: auto;
-    margin-top: 20px; /* إضافة مسافة من الأعلى */
+    margin-top: 20px;
     transition: transform 0.3s ease;
+}
+
+.center-image img:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
     .nav-list {
-        display: none; /* إخفاء القائمة بشكل افتراضي في الجوال */
+        display: none;
         flex-direction: column;
-        background-color: #1f1d22; /* نفس لون الخلفية */
+        background-color: #1f1d22;
         position: fixed;
         top: 0;
         right: 0;
         width: 100%;
-        height: 100vh; /* القائمة بحجم الصفحة كاملة */
+        height: 100vh;
         justify-content: center;
         align-items: center;
         z-index: 1000;
     }
 
     .nav-list.active {
-        display: flex; /* إظهار القائمة عند النقر على أيقونة القائمة */
-    }
-
-    .nav-list li {
-        /*margin: 2px 0; /* زيادة المسافة بين الأزرار في القائمة */
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .menu-icon {
-        display: block; /* إظهار أيقونة القائمة في الجوال */
+        display: block;
     }
 
     .home-icon {
-        display: block; /* إظهار زر الرئيسية في الجوال */
+        display: block;
         position: absolute;
-        right: 20px; /* إبعاده عن أيقونة القائمة */
+        right: 20px;
         top: 5px;
     }
 
     .home-icon img {
-        width: 80px; /* تكبير حجم زر الرئيسية في الجوال */
+        width: 80px;
         height: 80px;
     }
 
     .center-image img {
-        max-width: 100%; /* تكبير الصورة في الجوال */
+        max-width: 100%;
     }
 }
 
-/* حجم زر "إكس" في قائمة الجوال */
 .close-icon {
-    display: none; /* إخفاء زر الإكس افتراضيًا */
-    font-size: 30px; /* حجم زر الإكس */
+    display: none;
+    font-size: 30px;
     color: #ffffff;
     cursor: pointer;
     position: absolute;
@@ -138,33 +146,29 @@ nav {
 }
 
 @media (max-width: 768px) {
-    /* إظهار زر الإكس عند فتح القائمة */
     .nav-list.active + .close-icon {
         display: block;
     }
 }
 
-/* تنسيق الفوتر */
 footer {
-    background-color: #1f1d22; /* لون الخلفية */
+    background-color: #1f1d22;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto; /* لجعل الفوتر يلتصق بالأسفل */
+    margin-top: auto;
 }
 
-/* تنسيق النص */
 footer p {
-    flex-grow: 1; /* يجعل النص يأخذ المساحة المتبقية */
-    color: #fff; /* لون النص */
+    flex-grow: 1;
+    color: #fff;
     font-size: 14px;
 }
 
-/* تنسيق صورة حقوق النشر */
 footer .copyright img {
-    max-width: 350px; /* الحد الأقصى لعرض الصورة */
-    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
-    display: block; /* لجعل الصورة تظهر بشكل صحيح */
-    margin-left: auto; /* دفع الصورة إلى أقصى اليمين */
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin-left: auto;
 }
