@@ -159,5 +159,5 @@ footer .copyright img {
     max-width: 250px; /* الحد الأقصى لعرض الصورة */
     height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
     display: block; /* لجعل الصورة تظهر بشكل صحيح */
-    margin-left: auto; /* نقل الصورة إلى اليمين */
+    align-items: center;
 }
