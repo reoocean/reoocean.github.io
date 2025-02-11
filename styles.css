@@ -154,10 +154,17 @@ footer {
     margin-top: auto; /* لجعل الفوتر يلتصق بالأسفل */
 }
 
+/* تنسيق النص */
+footer p {
+    flex-grow: 1; /* يجعل النص يأخذ المساحة المتبقية */
+    color: #fff; /* لون النص */
+    font-size: 14px;
+}
+
 /* تنسيق صورة حقوق النشر */
 footer .copyright img {
-    max-width: 250px; /* الحد الأقصى لعرض الصورة */
+    max-width: 350px; /* الحد الأقصى لعرض الصورة */
     height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
     display: block; /* لجعل الصورة تظهر بشكل صحيح */
-    height: auto;
+    margin-left: auto; /* دفع الصورة إلى أقصى اليمين */
 }
