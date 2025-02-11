@@ -156,8 +156,8 @@ footer {
 
 /* تنسيق نص حقوق النشر */
 footer .copyright {
-    font-size: 14px;
-    color: #ffffff;
+    width: 24px;
+    height: 44px;
 }
 
 /* تنسيق روابط مواقع التواصل الاجتماعي */
@@ -168,8 +168,8 @@ footer .social-links {
 
 footer .social-links a {
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 348px;
+    height: 22px;
     transition: transform 0.3s ease;
 }
 
