@@ -155,10 +155,6 @@ footer {
 }
 
 /* تنسيق صورة حقوق النشر */
-footer .copyright {
-    align-items: center;
-}
-
 footer .copyright img {
     max-width: 250px; /* الحد الأقصى لعرض الصورة */
     height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
