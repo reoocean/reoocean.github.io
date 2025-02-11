@@ -159,5 +159,5 @@ footer .copyright img {
     max-width: 250px; /* الحد الأقصى لعرض الصورة */
     height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
     display: block; /* لجعل الصورة تظهر بشكل صحيح */
-    justify-content: flex-start; /*الأزرار تبدأ */
+    align-items: flex-end; /*الأزرار تبدأ */
 }
