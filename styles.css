@@ -89,7 +89,7 @@ nav {
 }
 
 .center-image img:hover {
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
 }
 
 @media (max-width: 768px) {
