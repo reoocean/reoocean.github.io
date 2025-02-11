@@ -28,10 +28,6 @@ nav {
     align-items: center;
 }
 
-.nav-list li {
-    /*margin: 0 0px; /* تقليل المسافة بين الأزرار في الكمبيوتر */
-}
-
 .nav-list li a,
 .home-icon {
     position: relative;
@@ -105,7 +101,7 @@ nav {
     }
 
     .nav-list li {
-        margin: 2px 0; /* زيادة المسافة بين الأزرار في القائمة */
+        /*margin: 2px 0; /* زيادة المسافة بين الأزرار في القائمة */
     }
 
     .menu-icon {
