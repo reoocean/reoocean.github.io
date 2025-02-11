@@ -155,6 +155,10 @@ footer {
 }
 
 /* تنسيق نص حقوق النشر */
+footer .copyright {
+    font-size: 14px;
+    color: #ffffff;
+}
 footer .copyright img {
     max-width: 150px; /* الحد الأقصى لعرض الصورة */
     height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
