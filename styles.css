@@ -85,7 +85,7 @@ nav {
     max-width: 40%;
     height: auto;
     margin-top: 20px;
-    transition: transform 0.3s ease;
+    /*transition: transform 0.3s ease;*/
 }
 
 .center-image img:hover {
@@ -151,24 +151,31 @@ nav {
     }
 }
 
+/* تنسيق الفوتر */
 footer {
-    background-color: #1f1d22;
+    background-color: #1f1d22; /* لون الخلفية */
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: auto;
+    margin-top: auto; /* لجعل الفوتر يلتصق بالأسفل */
+    flex-direction: row-reverse; /* لعكس الاتجاه وجعل الصورة على اليمين */
 }
 
+/* تنسيق النص */
 footer p {
-    flex-grow: 1;
     color: #fff;
     font-size: 14px;
 }
 
+/* تنسيق صورة حقوق النشر */
+footer .copyright {
+    display: flex;
+    justify-content: flex-end; /* دفع المحتوى إلى اليمين */
+    width: 100%;
+}
+
 footer .copyright img {
-    max-width: 350px;
+    max-width: 250px; /* تحديد الحجم */
     height: auto;
-    display: block;
-    margin-left: auto;
 }
