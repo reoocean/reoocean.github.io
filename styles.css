@@ -33,7 +33,8 @@ nav {
 .home-icon {
     position: relative;
     display: inline-block;
-    transition: transform 0.3s ease;
+    /*transition: transform 0.3s ease;*/
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-list li a img,
@@ -44,7 +45,9 @@ nav {
 
 .nav-list li a:hover,
 .home-icon:hover {
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
+    color: #ffcc00;
+    transform: translateX(5px);
 }
 
 .nav-list li a img.default,
