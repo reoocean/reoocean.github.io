@@ -1,22 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuIcon = document.querySelector(".menu-icon");
-    const closeIcon = document.querySelector(".close-icon");
-    const navList = document.querySelector(".nav-list");
+body {
+  margin: 0;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-    // عند النقر على ☰ افتح القائمة
-    menuIcon.addEventListener("click", function () {
-        navList.classList.add("active");
-    });
+/* المشهد */
+.lamp-scene {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    // عند النقر على ❌ أغلق القائمة
-    closeIcon.addEventListener("click", function () {
-        navList.classList.remove("active");
-    });
+/* اللمبة */
+.bulb {
+  width: 80px;
+  height: 120px;
+  background: transparent;
+  border: 3px solid #ccc;
+  border-radius: 50% 50% 45% 45%;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
 
-    // إغلاق القائمة عند النقر خارجها
-    document.addEventListener("click", function (event) {
-        if (!navList.contains(event.target) && !menuIcon.contains(event.target)) {
-            navList.classList.remove("active");
-        }
-    });
-});
+/* الحبل */
+.cord {
+  width: 4px;
+  height: 100px;
+  background: #ccc;
+  margin-top: -5px;
+  cursor: pointer;
+}
